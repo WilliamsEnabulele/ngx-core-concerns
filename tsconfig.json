@@ -11,8 +11,8 @@
     "noFallthroughCasesInSwitch": true,
     "esModuleInterop": true,
     "paths": {
-      "ngx-essentials": [
-        "./dist/ngx-essentials"
+      "ngx-core-concerns": [
+        "./dist/ngx-core-concerns"
       ]
     },
     "sourceMap": true,

@@ -3,23 +3,23 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngx-essentials": {
+    "ngx-core-concerns": {
       "projectType": "library",
-      "root": "projects/ngx-essentials",
-      "sourceRoot": "projects/ngx-essentials/src",
+      "root": "projects/ngx-core-concerns",
+      "sourceRoot": "projects/ngx-core-concerns/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/ngx-essentials/ng-package.json"
+            "project": "projects/ngx-core-concerns/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/ngx-essentials/tsconfig.lib.prod.json"
+              "tsConfig": "projects/ngx-core-concerns/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/ngx-essentials/tsconfig.lib.json"
+              "tsConfig": "projects/ngx-core-concerns/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -27,7 +27,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "tsConfig": "projects/ngx-essentials/tsconfig.spec.json",
+            "tsConfig": "projects/ngx-core-concerns/tsconfig.spec.json",
             "polyfills": [
               "zone.js",
               "zone.js/testing"

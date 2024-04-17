@@ -1,5 +1,5 @@
 /*
- * Public API Surface of ngx-essentials
+ * Public API Surface of ngx-core-concerns
  */
 
 export * from './lib/ngx-validations.service';
