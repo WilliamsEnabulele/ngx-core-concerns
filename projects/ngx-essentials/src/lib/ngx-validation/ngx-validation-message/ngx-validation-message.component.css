@@ -1,0 +1,15 @@
+.invalid{
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: .875em;
+    color: #ff0018;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}

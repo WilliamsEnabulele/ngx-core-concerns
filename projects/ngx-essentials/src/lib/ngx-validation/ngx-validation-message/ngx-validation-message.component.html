@@ -1,0 +1,3 @@
+<ul *ngIf="control?.invalid && control?.touched && errors?.length">
+    <li class="invalid" *ngFor="let error of errors">{{error}}</li>
+</ul>
