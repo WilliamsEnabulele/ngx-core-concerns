@@ -1,6 +1,20 @@
 {
   "name": "ngx-core-concerns-ws",
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "homepage": "https://github.com/WilliamsEnabulele/ngx-core-concerns/blob/main/README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WilliamsEnabulele/jwt-core-concerns.git"
+  },
+  "keywords": [
+    "Angular",
+    "ngx",
+    "ngx-validation",
+    ""
+ 
+  ],
+  "author": "Williams Enabulele",
+  "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
