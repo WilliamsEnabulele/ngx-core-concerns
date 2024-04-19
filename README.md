@@ -1,7 +1,9 @@
 # NgxCoreConcerns
+
 ngx-core-concerns is a comprehensive Angular library curated to streamline application development by providing essential services, components, pipes, and directives. Designed to simplify common tasks and address core concerns, this library empowers developers to build robust Angular applications with ease.
 
-## Key Features:
+## Key Features
+
 Services: A collection of utility services to handle common functionalities such as data manipulation, validation, and authentication, enhancing application efficiency and maintainability.
 
 Components: Reusable UI components meticulously crafted to accelerate development, promote consistency, and elevate the user experience. From buttons to modals, these components are customizable and adaptable to various design systems.
@@ -12,7 +14,7 @@ Directives: Simplify DOM manipulation and interaction with a suite of directives
 
 ngx-core-concerns strives to be the go-to resource for Angular developers seeking a robust foundation for their projects, enabling them to focus on building innovative features and delivering exceptional user experiences.
 
-# NgxValidationsService
+## NgxValidationsService
 
 This service provides a set of reusable validators for Angular forms.
 
@@ -53,7 +55,7 @@ const form = new FormGroup({
 });
 ```
 
-# Ngx Validation Message Component
+## Ngx Validation Message Component
 
 The Ngx Validation Message Component is an Angular reuseable component designed to display validation messages for form controls.
 
@@ -80,4 +82,35 @@ In your component's HTML template, use the <ngx-validation-message> selector to 
 
 ```typescript
 <ngx-validation-message [control]="yourFormControl"></ngx-validation-message>
+```
+
+## Offline Service
+
+Detect when a user is offline
+
+## Usage
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { OfflineService } from 'ngx-core-concerns';
+
+@Component({
+  selector: 'app-my-component',
+  template: `
+    <div>
+      Application is {{ online ? 'online' : 'offline' }}
+    </div>
+  `,
+})
+export class MyComponent implements OnInit {
+  online: boolean;
+
+  constructor(private offlineService: OfflineService) {}
+
+  ngOnInit() {
+    this.offlineService.isOnline().subscribe((isOnline) => {
+      this.online = isOnline;
+    });
+  }
+}
 ```
