@@ -1,6 +1,37 @@
 {
   "name": "ngx-core-concerns",
-  "version": "0.0.1",
+  "version": "0.0.4",
+  "homepage": "https://github.com/WilliamsEnabulele/ngx-core-concerns/blob/main/README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WilliamsEnabulele/jwt-core-concerns.git"
+  },
+  "keywords": [
+    "Angular",
+    "ngx",
+    "Angular", 
+    "Validation", 
+    "Pipes", 
+    "Components", 
+    "Directives", 
+    "Form Validation", 
+    "Custom Validators", 
+    "UI Components", 
+    "Reactive Forms", 
+    "Custom Pipes", 
+    "Data Binding", 
+    "Input Validation", 
+    "Utility Directives", 
+    "Angular Library", 
+    "Angular Module", 
+    "Form Controls", 
+    "Angular Development", 
+    "Angular Toolkit", 
+    "Angular Utilities", 
+    "Frontend Development"
+  ],
+  "author": "Williams Enabulele",
+  "license": "MIT",
   "peerDependencies": {
     "@angular/common": "^17.3.0",
     "@angular/core": "^17.3.0"

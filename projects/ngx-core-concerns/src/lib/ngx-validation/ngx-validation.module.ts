@@ -8,6 +8,7 @@ import { NgxValidationMessageComponent } from './ngx-validation-message/ngx-vali
   declarations: [NgxValidationMessageComponent],
   imports: [
     CommonModule
-  ]
+  ],
+  exports: [NgxValidationMessageComponent]
 })
 export class NgxValidationModule { }

@@ -8,9 +8,9 @@ export class NgxValidationsService {
 
   constructor() { }
 
-  static passwordMatchValidator = (control: FormGroup): ValidationErrors | null => {
-    const password = control.get('password');
-    const confirmPassword = control.get('confirmPassword');
+  static passwordMatchValidator = (control: AbstractControl): ValidationErrors | null => {
+    const password = control.root.get('password');
+    const confirmPassword = control;
 
     return password && confirmPassword && password.value !== confirmPassword.value ? { 'passwordMismatch': true } : null;
   };
