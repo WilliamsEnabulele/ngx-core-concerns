@@ -18,6 +18,7 @@ export class NgxValidationMessageComponent {
           errors.push(this.errorMessages(propertyName, this.control.errors[propertyName]));
         }
       }
+     
       return errors;
     }
     return null;
@@ -28,14 +29,15 @@ export class NgxValidationMessageComponent {
       required: 'This field is required',
       passwordMismatch: 'Passwords do not match. Please ensure that your passwords match and try again.',
       strongPassword: 'Please choose a stronger password and try again',
-      passwordLength: `Password must be at least ${params.passwordLength} characters long`,
+      passwordLength: `Password must be at least ${params.requiredLength} characters long`,
       passwordCase: 'Password must contain both uppercase and lowercase letters',
       passwordDigit: 'Password must contain at least one numeric digit',
       passwordSpecial: 'Password must contain at least one special character',
-      minimumAge: 'Minimum age is required.',
-      maximumAge: 'Maximum age is required.',
+      minimumAge: `Minimum age is required is ${params.requiredAge}.`,
+      maximumAge: `Maximum age is required is ${params.requiredAge}`,
       invalidFileType: 'Invalid file type.',
-      fileSizeExceeded: 'File size exceeded.',
+      fileSizeExceeded: `File size exceeded, maximum size allowed is ${params.requiredFileSize}`,
+      imageDimensionsExceeded: `Image dimensions of max width ${params.requiredWidth} and max height ${params.requiredHeight} should not be exceeded`,
       invalidImage: 'Invalid image file.',
       invalidUrl: 'Invalid URL.',
       invalidNigerianPhoneNumber: 'Invalid Nigerian phone number.',
